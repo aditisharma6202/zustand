@@ -1,0 +1,55 @@
+/* components/ProductList.module.css */
+
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+    max-width: 100px;
+    aspect-ratio: 2/3;
+    padding: 1em;
+    border-radius: 4px;
+}
+.title {
+    display: -webkit-box; /* For WebKit browsers */
+    -webkit-box-orient: vertical; /* Vertical box orientation */
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis */
+    margin: 0; /* Reset margin for the title */
+}
+.button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
